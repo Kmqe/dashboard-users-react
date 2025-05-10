@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "basicInfo": {
+        "name": "MOHAMMED ALHARBI",
+        "email": "mohammadalamry.10@gmail.com"
+      },
+      "username": "kmqe_",
+      "pricingPlan": "Premium",
+      "comments": 120,
+      "reviews": 42,
+      "status": "Banned",
+      "createdDate": "1950-01-01"
+    },
+    {
+      "id": "2",
+      "basicInfo": {
+        "name": "Impedit rerum volup",
+        "email": "Dolores inventore re"
+      },
+      "username": "Laudantium mollitia",
+      "pricingPlan": "Basic",
+      "comments": 0,
+      "reviews": 0,
+      "status": "Approved",
+      "createdDate": "2025-05-10"
+    }
+  ]
+}

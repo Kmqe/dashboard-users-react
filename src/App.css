@@ -1,38 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a191f;
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 260px 1fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .main-navigation {
+  position: relative;
+  border-right: 1px solid rgba(107, 107, 107, 0.13);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .main-navigation .navigation-container {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App .navigation-container .logo {
+  border-top: 1px solid rgba(107, 107, 107, 0.13);
+  border-bottom: 1px solid rgba(107, 107, 107, 0.13);
+  padding: 20px 25px;
+}
+
+.App .navigation-container h2 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App .navigation-container .user-navigation {
+  padding: 20px 25px;
+  color: white;
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid rgba(107, 107, 107, 0.13);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .user-navigation .user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.App .user-navigation .user-icon {
+  background-color: #212027;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.App .user-navigation .user-info p {
+  font-size: 12px;
+}
+
+.App .user-navigation .logout-user {
+  align-self: center;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #f9ab00;
+}
+
+.App .user-navigation .logout-user:hover {
+  cursor: pointer;
+}
+
+.App .users {
+  padding: 20px 25px;
+}
+
+.App .users .menu-item {
+  color: #f9ab00;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* WORK AREA */
+.App .work-area {
+  padding: 0px 25px;
+}
+
+.work-area .users-toolbar {
+  border-bottom: 1px solid rgba(107, 107, 107, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-area .users-toolbar .add-user {
+  background-color: transparent;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 10px;
+  border: 2px solid #f9ab00;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.work-area .users-total {
+  color: white;
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+.work-area .users-total h1 {
+  font-weight: normal;
+}
+
+.work-area .users-total p {
+  color: rgba(255, 255, 255, 0.733);
+  font-size: 12px;
+  align-self: flex-end;
+  margin-bottom: 10px;
 }

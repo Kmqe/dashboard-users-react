@@ -1,0 +1,96 @@
+.add-user-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1d1c238e;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+form {
+  background-color: #1a191f;
+  color: white;
+  padding: 40px 60px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+form h1 {
+  text-align: center;
+  font-weight: normal;
+}
+
+form .box-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+form .box-input label {
+  color: #c0c0c0;
+  font-size: 14px;
+}
+
+form .box-input input,
+form .box-input select {
+  border: 2px solid transparent;
+  outline: none;
+  background-color: #222028;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 12px 15px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+form .box-input .select-container {
+  position: relative;
+}
+
+form .box-input select {
+  width: 100%;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #f9ab00;
+  font-size: 14px;
+}
+
+form .box-input select option {
+  font-size: 15px;
+}
+
+form .box-input input:focus,
+form .box-input select:focus {
+  border-color: #f9ab00;
+}
+
+form .add-user {
+  background-color: transparent;
+  color: white;
+  padding: 13px 50px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid #f9ab00;
+  font-size: 12px;
+  cursor: pointer;
+}

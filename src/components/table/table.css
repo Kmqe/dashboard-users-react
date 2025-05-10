@@ -1,0 +1,116 @@
+.work-area table {
+  color: white;
+  margin: 25px auto 0;
+  border-spacing: 0 10px;
+  width: 100%;
+}
+
+.work-area table thead {
+  position: relative;
+}
+
+.work-area table thead::after {
+  content: "-";
+  display: block;
+  line-height: 0.5em;
+  color: transparent;
+}
+
+.work-area table thead th {
+  font-size: 12px;
+  font-weight: normal;
+  color: #c0c0c0;
+  text-align: start;
+  padding: 0 70px 0 20px;
+}
+
+.work-area table thead th:first-child {
+  padding-right: 35px;
+}
+
+.work-area table tbody tr {
+  background-color: #222028;
+}
+
+.work-area table tbody td {
+  font-weight: normal;
+  color: #c0c0c0;
+  padding: 20px;
+}
+
+.work-area table tbody td.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.work-area table tbody td .user-icon {
+  background-color: #212027;
+  border: 3px solid rgba(0, 0, 0, 0.295);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.work-area table tbody td .user-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.work-area table tbody td .user-info-name {
+  color: white;
+  font-weight: bold;
+}
+
+.work-area table tbody td .action-user {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.work-area table tbody td .action-user .icon-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* LOCK */
+.work-area table tbody td .action-user .icon-container.lock {
+  background-color: rgba(0, 128, 0, 0.123);
+  color: #29b474;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.work-area table tbody td .action-user .icon-container.lock:hover {
+  background-color: rgba(0, 128, 0, 0.308);
+}
+
+/* EDIT */
+.work-area table tbody td .action-user .icon-container.edit {
+  background-color: rgba(0, 102, 255, 0.116);
+  color: rgb(0, 153, 255);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.work-area table tbody td .action-user .icon-container.edit:hover {
+  background-color: rgba(0, 102, 255, 0.281);
+}
+
+/* DELETE */
+.work-area table tbody td .action-user .icon-container.delete {
+  background-color: rgba(230, 78, 78, 0.123);
+  color: #eb5757;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.work-area table tbody td .action-user .icon-container.delete:hover {
+  background-color: rgba(230, 78, 78, 0.267);
+}
