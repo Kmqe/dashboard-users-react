@@ -22,7 +22,6 @@ const AddUserModal = () => {
     const dispatch = useDispatch();
     // Check if the "Add User" popup should be shown
     const showPopup = useSelector(state => state.users.showAddUserModal); // true Or false
-    let users = useSelector(state => state.users.users);
     const lastId = useSelector(state => state.users.lastId)
     let { email, password, rights, subscription, username, name } = useSelector(state => state.users.userInfo);
 

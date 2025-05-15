@@ -13,6 +13,8 @@ import { setUserIdHandle, setShowPopupAction } from "../../features/users/usersS
 
 // REDUX HOOKS
 import { useDispatch, useSelector } from "react-redux";
+
+// Import Link to create navigation links
 import { Link } from "react-router-dom";
 
 // Table column headers configuration
@@ -63,12 +65,6 @@ const Table = ({ users }) => {
         dispatch(setShowPopupAction({ show: !showPopupAction, type: type_action }))
         dispatch(setUserIdHandle(id))
     }
-
-    // function editUser() {
-    //     return <>
-    //         < Link to="/edit-user" />
-    //     </>
-    // }
 
     return (
         <table >

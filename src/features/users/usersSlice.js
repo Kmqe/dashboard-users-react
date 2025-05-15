@@ -1,4 +1,3 @@
-
 import { createSlice } from "@reduxjs/toolkit";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
@@ -58,8 +57,6 @@ export const updateStates = createAsyncThunk("userSlice/updateState", async (use
 })
 
 export const editUserInfoFunction = createAsyncThunk("userSlice/editUserInfo", async (userInfo) => {
-    console.log(userInfo)
-
     const response = await fetch(`http://localhost:3000/users/${userInfo.id}`, {
         method: "PATCH",
         body: JSON.stringify({
@@ -76,11 +73,8 @@ export const editUserInfoFunction = createAsyncThunk("userSlice/editUserInfo", a
             "Content-type": "application/json"
         }
     })
-
     return await response.json();
 })
-
-
 
 const usersSlice = createSlice({
     name: "users",

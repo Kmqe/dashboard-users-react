@@ -16,21 +16,6 @@
       "createdDate": "1727-01-01"
     },
     {
-      "id": "3",
-      "basicInfo": {
-        "name": "Sara Alotaibi",
-        "email": "sara.o@gmail.com"
-      },
-      "username": "s_otaibi",
-      "pricingPlan": "Premium",
-      "comments": 10,
-      "reviews": 2,
-      "password": "S5678",
-      "rights": "user",
-      "status": "Approved",
-      "createdDate": "2022-12-01"
-    },
-    {
       "id": "4",
       "basicInfo": {
         "name": "Fahad Alshehri",

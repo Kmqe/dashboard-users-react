@@ -1,11 +1,9 @@
-// import './App.css';
-
+// FONTAWSOME
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightFromBracket, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faUser as faUserRegular } from "@fortawesome/free-regular-svg-icons";
 
 // UserSlice Action
-// import { fetchUsers } from './features/users/usersSlice';
 import { fetchUsers } from '../../features/users/usersSlice';
 import { setShowAddUserModal } from '../../features/users/usersSlice';
 
@@ -15,34 +13,26 @@ import { useEffect } from 'react';
 // REDUX HOOKS
 import { useSelector, useDispatch } from 'react-redux';
 
-// component
-// import Table from "./components/table/Table";
+// COMPONENTS
 import Table from "../table/Table";
-// import AddUserModal from './components/userModal/AddUserModal';
 import AddUserModal from '../userModal/AddUserModal';
-// import PopupAction from './components/popupAction/PopupAction';
 import PopupAction from '../popupAction/PopupAction';
 
 function Home() {
     const dispatch = useDispatch();
     // Array of Users
     const users = useSelector(state => state.users.users)
-
     // get modal visibility state
     const showAddUserModal = useSelector(state => state.users.showAddUserModal);
-
     //  Show the action popup when clicking Lock or Delete
     const showPopupAction = useSelector(state => state.users.showPopupAction.show);
-
     useEffect(() => {
         dispatch(fetchUsers())
     }, []);
-
     // Toggle the visibility of the "Add User" modal
     function showAddUserPopup() {
         dispatch(setShowAddUserModal(!showAddUserModal))
     }
-
     return (
         <>
             <div className='App'>

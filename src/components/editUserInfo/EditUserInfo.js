@@ -17,25 +17,28 @@ import {
     setUsername,
 } from "../../features/users/usersSlice";
 
-// 
+// Import to get URL parameters
 import { useParams } from "react-router-dom";
 
-// 
+// COMPONENT
 import { editUserInfoFunction } from "../../features/users/usersSlice";
+
+// REACT HOOKS
 import { useEffect } from "react";
 
 const EditUserInfo = () => {
-    let users = useSelector(state => state.users.users)
-    let { email, password, rights, subscription, username, name } = useSelector(state => state.users.userInfo);
-    const { userId } = useParams();
     const dispatch = useDispatch();
+    // Get userId from URL
+    const { userId } = useParams();
+    let { email, password, rights, subscription, username, name } = useSelector(state => state.users.userInfo);
+    let users = useSelector(state => state.users.users);
+
     let user = users.find(user => user.id === userId);
     if (user) {
         sessionStorage.setItem("user_edit_info", JSON.stringify(user));
     }
     useEffect(() => {
         const user = JSON.parse(sessionStorage.getItem("user_edit_info"));
-        console.log(user)
         dispatch(setName(user.basicInfo.name))
         dispatch(setEmail(user.basicInfo.email))
         dispatch(setUsername(user.username))
@@ -104,7 +107,6 @@ const EditUserInfo = () => {
                         username,
                         id: userId,
                     }))
-
                 }}>Save</button>
             </form >
         </div>
