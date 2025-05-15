@@ -8,23 +8,207 @@
       },
       "username": "kmqe_",
       "pricingPlan": "Premium",
-      "comments": 120,
-      "reviews": 42,
-      "status": "Banned",
-      "createdDate": "1950-01-01"
-    },
-    {
-      "id": "2",
-      "basicInfo": {
-        "name": "Impedit rerum volup",
-        "email": "Dolores inventore re"
-      },
-      "username": "Laudantium mollitia",
-      "pricingPlan": "Basic",
       "comments": 0,
       "reviews": 0,
+      "password": "M1950",
+      "rights": "admin",
       "status": "Approved",
-      "createdDate": "2025-05-10"
+      "createdDate": "1727-01-01"
+    },
+    {
+      "id": "3",
+      "basicInfo": {
+        "name": "Sara Alotaibi",
+        "email": "sara.o@gmail.com"
+      },
+      "username": "s_otaibi",
+      "pricingPlan": "Premium",
+      "comments": 10,
+      "reviews": 2,
+      "password": "S5678",
+      "rights": "user",
+      "status": "Approved",
+      "createdDate": "2022-12-01"
+    },
+    {
+      "id": "4",
+      "basicInfo": {
+        "name": "Fahad Alshehri",
+        "email": "fahad.s@gmail.com"
+      },
+      "username": "f_shehri",
+      "pricingPlan": "Premium",
+      "comments": 5,
+      "reviews": 3,
+      "password": "Fahad123",
+      "rights": "user",
+      "status": "Approved",
+      "createdDate": "2023-06-10"
+    },
+    {
+      "id": "5",
+      "basicInfo": {
+        "name": "Lama Almutairi",
+        "email": "lama.m@gmail.com"
+      },
+      "username": "lama_mt",
+      "pricingPlan": "Free",
+      "comments": 0,
+      "reviews": 0,
+      "password": "Lama321",
+      "rights": "user",
+      "status": "Approved",
+      "createdDate": "2024-05-05"
+    },
+    {
+      "id": "6",
+      "basicInfo": {
+        "name": "Nasser Alharbi",
+        "email": "nasser.h@gmail.com"
+      },
+      "username": "n_harbi",
+      "pricingPlan": "Premium",
+      "comments": 1,
+      "reviews": 0,
+      "password": "Nas789",
+      "rights": "user",
+      "status": "Approved",
+      "createdDate": "2023-01-20"
+    },
+    {
+      "id": "7",
+      "basicInfo": {
+        "name": "Reem Alsaud",
+        "email": "reem.s@gmail.com"
+      },
+      "username": "reem_sd",
+      "pricingPlan": "Premium",
+      "comments": 7,
+      "reviews": 4,
+      "password": "Reem456",
+      "rights": "admin",
+      "status": "Approved",
+      "createdDate": "2022-11-25"
+    },
+    {
+      "id": "8",
+      "basicInfo": {
+        "name": "Saad Alrashid",
+        "email": "saad.r@gmail.com"
+      },
+      "username": "s_rashid",
+      "pricingPlan": "Free",
+      "comments": 2,
+      "reviews": 1,
+      "password": "Saad111",
+      "rights": "user",
+      "status": "Banned",
+      "createdDate": "2024-03-12"
+    },
+    {
+      "id": "9",
+      "basicInfo": {
+        "name": "Ahlam Alsubaie",
+        "email": "ahlam.s@gmail.com"
+      },
+      "username": "ahlam_sb",
+      "pricingPlan": "Premium",
+      "comments": 4,
+      "reviews": 1,
+      "password": "Ah9876",
+      "rights": "user",
+      "status": "Approved",
+      "createdDate": "2023-07-07"
+    },
+    {
+      "id": "10",
+      "basicInfo": {
+        "name": "Yousef Aldossari",
+        "email": "yousef.d@gmail.com"
+      },
+      "username": "yo_doss",
+      "pricingPlan": "Premium",
+      "comments": 0,
+      "reviews": 0,
+      "password": "Yo5555",
+      "rights": "user",
+      "status": "Approved",
+      "createdDate": "2022-10-10"
+    },
+    {
+      "id": "11",
+      "basicInfo": {
+        "name": "Mona Aljohani",
+        "email": "mona.j@gmail.com"
+      },
+      "username": "mjohani",
+      "pricingPlan": "Premium",
+      "comments": 6,
+      "reviews": 2,
+      "password": "MoJ123",
+      "rights": "user",
+      "status": "Approved",
+      "createdDate": "2024-02-01"
+    },
+    {
+      "id": "12",
+      "basicInfo": {
+        "name": "Khalid Almalki",
+        "email": "khalid.m@gmail.com"
+      },
+      "username": "kalmalki",
+      "pricingPlan": "Free",
+      "comments": 1,
+      "reviews": 1,
+      "password": "KalKal88",
+      "rights": "user",
+      "status": "Approved",
+      "createdDate": "2023-08-21"
+    },
+    {
+      "id": "13",
+      "basicInfo": {
+        "name": "Huda Alzahrani",
+        "email": "huda.z@gmail.com"
+      },
+      "username": "h_zahra",
+      "pricingPlan": "Premium",
+      "comments": 9,
+      "reviews": 5,
+      "password": "Huda777",
+      "rights": "admin",
+      "status": "Approved",
+      "createdDate": "2022-09-18"
+    },
+    {
+      "id": "14",
+      "basicInfo": {
+        "name": "Abdullah Alotaibi",
+        "email": "abdullah.o@gmail.com"
+      },
+      "username": "a_otaibi",
+      "pricingPlan": "Premium",
+      "comments": 3,
+      "reviews": 0,
+      "password": "Abd123",
+      "rights": "user",
+      "status": "Approved",
+      "createdDate": "2023-03-03"
+    },
+    {
+      "id": "15",
+      "basicInfo": {
+        "name": "Nouf Alharthi",
+        "email": "nouf.h@gmail.com"
+      },
+      "username": "nouf_h",
+      "pricingPlan": "Free",
+      "comments": 0,
+      "reviews": 0,
+      "password": "Nouf900",
+      "rights": "user",
+      "status": "Approved",
+      "createdDate": "2024-04-22"
     }
   ]
 }

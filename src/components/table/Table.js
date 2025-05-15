@@ -13,6 +13,7 @@ import { setUserIdHandle, setShowPopupAction } from "../../features/users/usersS
 
 // REDUX HOOKS
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 // Table column headers configuration
 const headers = [
@@ -63,9 +64,11 @@ const Table = ({ users }) => {
         dispatch(setUserIdHandle(id))
     }
 
-    function changeInfo() {
-        alert("Hello")
-    }
+    // function editUser() {
+    //     return <>
+    //         < Link to="/edit-user" />
+    //     </>
+    // }
 
     return (
         <table >
@@ -111,9 +114,12 @@ const Table = ({ users }) => {
                                         <div className='icon-container lock' onClick={() => handleAction(user.id, "change_state")}>
                                             <FontAwesomeIcon icon={faLock} />
                                         </div>
-                                        <div className='icon-container edit' onClick={() => changeInfo()}>
-                                            <FontAwesomeIcon icon={faPenToSquareRegular} />
-                                        </div>
+                                        <Link to={`/edit-user/${user.id}`}>
+                                            <div className='icon-container edit' onClick={() => { }}>
+                                                <FontAwesomeIcon icon={faPenToSquareRegular} />
+                                            </div>
+                                        </Link>
+
                                         <div className='icon-container delete' onClick={() => handleAction(user.id, "delete")}>
                                             <FontAwesomeIcon icon={faTrashCanRegular} />
                                         </div>

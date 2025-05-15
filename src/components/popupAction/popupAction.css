@@ -6,7 +6,7 @@
 }
 .popup-action .overlay {
   background-color: #1d1c238e;
-  position: absolute;
+  position: fixed;
   left: 0;
   height: 0;
   width: 100%;
@@ -15,7 +15,7 @@
 
 .popup-action .popup {
   background-color: #1a191f;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

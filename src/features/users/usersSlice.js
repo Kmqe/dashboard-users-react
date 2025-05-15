@@ -21,6 +21,8 @@ export const createUser = createAsyncThunk("usersSlice/postUsers", async (user) 
             pricingPlan: user.subscription,
             comments: 0,
             reviews: 0,
+            password: user.password,
+            rights: user.rights,
             status: "Approved",
             createdDate: currentDate,
         }),
@@ -55,6 +57,29 @@ export const updateStates = createAsyncThunk("userSlice/updateState", async (use
     return data;
 })
 
+export const editUserInfoFunction = createAsyncThunk("userSlice/editUserInfo", async (userInfo) => {
+    console.log(userInfo)
+
+    const response = await fetch(`http://localhost:3000/users/${userInfo.id}`, {
+        method: "PATCH",
+        body: JSON.stringify({
+            basicInfo: {
+                name: userInfo.name,
+                email: userInfo.email,
+            },
+            username: userInfo.username,
+            password: userInfo.password,
+            pricingPlan: userInfo.subscription,
+            rights: userInfo.rights,
+        }),
+        headers: {
+            "Content-type": "application/json"
+        }
+    })
+
+    return await response.json();
+})
+
 
 
 const usersSlice = createSlice({
@@ -79,6 +104,7 @@ const usersSlice = createSlice({
         },
         lastId: 0,
     },
+
     reducers: {
         setUsersArray: (state, action) => {
             state.users = action.payload;
@@ -163,6 +189,18 @@ const usersSlice = createSlice({
             .addCase(updateStates.rejected, (state, action) => {
                 state.error = action.error.message;
                 console.log(state.error)
+            })
+            // ============ EDIT USER INFORMATION ============ \\
+            .addCase(editUserInfoFunction.fulfilled, (state, action) => {
+                state.users = state.users.map(user => {
+                    if (user.id == action.payload.id) {
+                        return action.payload;
+                    }
+                    return user;
+                })
+            })
+            .addCase(editUserInfoFunction.rejected, (state, action) => {
+                // console.log(action.error.message)
             })
     }
 })

@@ -6,6 +6,7 @@
 
 body {
   background-color: #1a191f;
+  min-height: 100vh;
 }
 
 .App {
@@ -16,6 +17,7 @@ body {
 .App .main-navigation {
   position: relative;
   border-right: 1px solid rgba(107, 107, 107, 0.13);
+  min-height: 100vh;
 }
 
 .App .main-navigation .navigation-container {
