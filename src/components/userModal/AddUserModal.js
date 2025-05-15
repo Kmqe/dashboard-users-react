@@ -18,6 +18,9 @@ import {
     createUser,
 } from "../../features/users/usersSlice";
 
+// Import toast alert for adding
+import { notify } from "../toasts/Toast";
+
 const AddUserModal = () => {
     const dispatch = useDispatch();
     // Check if the "Add User" popup should be shown
@@ -26,9 +29,11 @@ const AddUserModal = () => {
     let { email, password, rights, subscription, username, name } = useSelector(state => state.users.userInfo);
 
     function saveUser(e) {
-        // Send user data to the backend (JSON server) to create a new user
+        e.preventDefault();
+        // Notify: adding user
+        notify("adding");
         dispatch(createUser({ email, password, rights, subscription, username, name, lastId }))
-        dispatch(setShowAddUserModal(!showPopup))
+        dispatch(setShowAddUserModal(!showPopup));
     }
     if (setShowAddUserModal) {
         return (

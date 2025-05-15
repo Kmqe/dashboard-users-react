@@ -108,15 +108,15 @@
     {
       "id": "10",
       "basicInfo": {
-        "name": "Yousef Aldossari",
-        "email": "yousef.d@gmail.com"
+        "name": "Molestiae exercitati",
+        "email": "Sed voluptate molest"
       },
-      "username": "yo_doss",
+      "username": "Eum eligendi culpa n",
       "pricingPlan": "Premium",
       "comments": 0,
       "reviews": 0,
-      "password": "Yo5555",
-      "rights": "user",
+      "password": "Pa$$w0rd!",
+      "rights": "moderator",
       "status": "Approved",
       "createdDate": "2022-10-10"
     },
@@ -168,32 +168,17 @@
     {
       "id": "14",
       "basicInfo": {
-        "name": "Abdullah Alotaibi",
-        "email": "abdullah.o@gmail.com"
+        "name": "Reprehenderit qui q",
+        "email": "Voluptate aut natus "
       },
-      "username": "a_otaibi",
+      "username": "In eum quidem praese",
       "pricingPlan": "Premium",
-      "comments": 3,
-      "reviews": 0,
-      "password": "Abd123",
-      "rights": "user",
-      "status": "Approved",
-      "createdDate": "2023-03-03"
-    },
-    {
-      "id": "15",
-      "basicInfo": {
-        "name": "Nouf Alharthi",
-        "email": "nouf.h@gmail.com"
-      },
-      "username": "nouf_h",
-      "pricingPlan": "Free",
       "comments": 0,
       "reviews": 0,
-      "password": "Nouf900",
+      "password": "Pa$$w0rd!",
       "rights": "user",
       "status": "Approved",
-      "createdDate": "2024-04-22"
+      "createdDate": "2025-05-15"
     }
   ]
 }

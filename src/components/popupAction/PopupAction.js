@@ -10,6 +10,9 @@ import {
 // REDUX HOOKS
 import { useSelector, useDispatch } from "react-redux";
 
+// Import toast alert for deleting
+import { notify } from "../toasts/Toast";
+
 const PopupAction = () => {
     const dispatch = useDispatch();
     // Get the type of action ("delete" OR "lock") for the confirmation popup
@@ -27,6 +30,8 @@ const PopupAction = () => {
         dispatch(deleteUser(id))
         // Close the confirmation popup and reset the popup type
         dispatch(setShowPopupAction({ show: !showPopupAction.show, type: "" }))
+        // Notify: deleting user
+        notify("deleting")
     }
 
     function handleChangeState() {

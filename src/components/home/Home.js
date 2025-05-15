@@ -37,7 +37,6 @@ function Home() {
         <>
             <div className='App'>
                 {showPopupAction ? <PopupAction /> : ""}
-
                 {showAddUserModal ? <AddUserModal /> : ""}
 
                 <div className='main-navigation'>
