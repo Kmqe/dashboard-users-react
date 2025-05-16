@@ -1,5 +1,4 @@
 # 🚀 React Users Dashboard Project
-🔗**DEMO** [visit](https://dashboard-users-react.netlify.app/)
 
 ## 📋 Overview
 A simple React project that displays a user dashboard. It allows you to view, manage, and interact with user data fetched from a mock API using JSON Server.
