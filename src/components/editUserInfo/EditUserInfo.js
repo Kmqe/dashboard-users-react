@@ -25,6 +25,7 @@ import { editUserInfoFunction } from "../../features/users/usersSlice";
 
 // REACT HOOKS
 import { useEffect } from "react";
+import { notify } from "../toasts/Toast";
 
 const EditUserInfo = () => {
     const dispatch = useDispatch();
@@ -107,6 +108,7 @@ const EditUserInfo = () => {
                         username,
                         id: userId,
                     }))
+                    notify("editing")
                 }}>Save</button>
             </form >
         </div>

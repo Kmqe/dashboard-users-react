@@ -7,6 +7,9 @@ export const notify = (type) => {
     else if (type === "deleting") {
         text = "User deleted successfully"
     }
+    else if (type === "editing") {
+        text = "User edited successfully"
+    }
     toast.success(text, {
         position: "bottom-right",
         autoClose: 2000,

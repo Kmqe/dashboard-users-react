@@ -155,7 +155,6 @@ const usersSlice = createSlice({
             // ============ CREATE USER ============ \\
             .addCase(createUser.fulfilled, (state, action) => {
                 state.users = [...state.users, action.payload]
-                console.log(action.payload)
                 state.lastId = action.payload.id;
                 state.userInfo.email = "";
                 state.userInfo.name = "";
